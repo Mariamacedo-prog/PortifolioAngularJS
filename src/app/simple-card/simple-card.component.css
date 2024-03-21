@@ -1,0 +1,47 @@
+.card{
+  padding: 20px ;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card{
+  animation: aparecer 4s forwards;
+}
+
+.card--icon{
+  width: 80px;
+}
+.card--title{
+
+}
+.card--description{
+ font-size: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Estilos específicos para dispositivos pequenos */
+}
+
+/* Dispositivos médios (tablets, 768px e abaixo) */
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos médios */
+}
+
+/* Dispositivos médios a grandes (tablets para desktops pequenos, 992px e abaixo) */
+@media only screen and (max-width: 992px) {
+  /* Estilos específicos para dispositivos médios a grandes */
+}
+
+/* Dispositivos grandes (desktops, 1200px e abaixo) */
+@media only screen and (max-width: 1200px) {
+  /* Estilos específicos para dispositivos grandes */
+}
+
+/* Dispositivos extra grandes (desktops maiores, 1400px e acima) */
+@media only screen and (min-width: 1400px) {
+  /* Estilos específicos para dispositivos extra grandes */
+}

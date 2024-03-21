@@ -151,6 +151,7 @@ a:hover{
   }
   .slider--mobile {
     display: block;
+    align-self: center;
   }
   .slider--web {
     display: none;

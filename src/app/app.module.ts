@@ -12,6 +12,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatTreeModule} from '@angular/material/tree';
 import { AboutComponent } from './pages/about/about.component';
 import {MatTableModule} from '@angular/material/table';
+import { SimpleCardComponent } from './simple-card/simple-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatTableModule} from '@angular/material/table';
     SliderComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SimpleCardComponent
   ],
   imports: [
     BrowserModule,

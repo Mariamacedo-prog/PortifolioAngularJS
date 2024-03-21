@@ -1,20 +1,26 @@
-<div class="about"  style="background-image: url('./assets/back-about2.jpg')">
+<div class="about" >
   <div class="about--info">
     <div class="about--info--area">
-      <p class="about--title"><span [ngStyle]="{'color': '#232323'}">I am a Profissional </span> Web Developer</p>
-      <p>I am brazilian, started learn 'bout Software development on 2020 I did a course where I'd learn to built a scheduling application using ReactJS, NodeJS and MongoDB.
-        On Dec. 2021 I got my first job, learning more bout Java 8/Java7, AngularJS/Angular 13 and SQL Server. </p>
-        <p>Today 
-        I have developed with React, Node, VueJS, among other technologies.
-        In the backend of some projects, I developed with NodeJS and express, with some databases like: MySQL, mongoDB, postgreSQL and even Firebase.</p>
-      <table  mat-table [dataSource]="dataSource" class="mat-elevation-z8 table--principal">
-        <mat-text-column class="table--coluna" name="question"></mat-text-column>
-        <mat-text-column  class="table--coluna" name="aswer"></mat-text-column>
-      
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-      </table>
+      <p class="about--title"><span [ngStyle]="{'color': '#fff'}">About </span> Me </p>
+      <p class="about--text">Hello! I'm a Professional Web Developer passionate about crafting innovative and functional solutions. 
+        Hailing from Brazil, I embarked on my software development journey in 2020, and since then, I've been immersed 
+        in the world of technology. 
+      </p> 
+      <p class="about--text">
+        In 2020, I enrolled in a course where I learned to build a scheduling application using modern technologies 
+        like ReactJS, NodeJS, and MongoDB. This was just the beginning of an exciting journey where I dove headfirst
+        into the realm of software development.
+      </p> 
     </div>
-    <img class="image--me" src="../../../assets/me.jpg" alt="My image">
+    <img class="image--me" src="../../../assets/maria.jpeg" alt="My image">
+  </div>
+</div>
+
+<div class="about--do" >
+  <p class="about--title"><span [ngStyle]="{'color': '#fff'}">What I </span>  do. </p>
+  <div class="do--list">
+    <div *ngFor="let item of doItens">
+      <app-simple-card [item]="item"></app-simple-card>
+    </div>
   </div>
 </div>

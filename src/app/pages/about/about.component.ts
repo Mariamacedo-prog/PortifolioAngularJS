@@ -9,6 +9,13 @@ const ELEMENT_DATA = [
   {question: 'Email',aswer: 'mariamacedo2xx@gmail.com'},
 ];
 
+const DO_DATA = [
+  {image: "backend.png", title: "Front-end", description:"teste teste teste teste teste teste "},
+  {image: "frontend.png", title: "Back-end", description:"teste teste teste teste teste teste teste "},
+  {image: "mobile.png", title: "Mobile", description:"teste teste teste teste teste teste teste teste teste teste teste teste teste "}
+];
+
+
 
 @Component({
   selector: 'app-about',
@@ -18,6 +25,7 @@ const ELEMENT_DATA = [
 export class AboutComponent implements OnInit {
   displayedColumns: string[] = ['question', 'aswer'];
   dataSource = ELEMENT_DATA;
+  doItens = DO_DATA;
 
 
   constructor() { }
