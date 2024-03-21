@@ -10,9 +10,9 @@ const ELEMENT_DATA = [
 ];
 
 const DO_DATA = [
-  {image: "backend.png", title: "Front-end", description:"teste teste teste teste teste teste "},
-  {image: "frontend.png", title: "Back-end", description:"teste teste teste teste teste teste teste "},
-  {image: "mobile.png", title: "Mobile", description:"teste teste teste teste teste teste teste teste teste teste teste teste teste "}
+  {image: "frontend.png", title: "Front-end", description:"Creating user interfaces and experiences for websites and applications."},
+  {image: "backend.png", title: "Back-end", description:"Building the server-side logic and functionality of websites and applications."},
+  {image: "mobile.png", title: "Mobile", description:"Developing applications tailored for smartphones and tablets."}
 ];
 
 
