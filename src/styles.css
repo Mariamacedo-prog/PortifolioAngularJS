@@ -21,6 +21,15 @@ a{
   }
 }
 
+@keyframes direitaCentro {
+  from {
+    margin-left: -2080px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
 @keyframes aparecer {
   from {
     opacity: 0;

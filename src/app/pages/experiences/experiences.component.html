@@ -1,12 +1,9 @@
 <div class="timeline">
 
   <div >
-    <app-experience-card  [color]="'#00C2FF'" [side]="'left'" [dataInfo]="listExperiences[0]"></app-experience-card>
-    <app-experience-card [color]="'#00ff95'" [side]="'right'" [dataInfo]="listExperiences[1]"></app-experience-card>
-    <app-experience-card [color]="'#f87ae7'" [side]="'left'" [dataInfo]="listExperiences[2]"></app-experience-card>
-    <app-experience-card [color]="'#f87a7a'" [side]="'right'" [dataInfo]="listExperiences[3]"></app-experience-card>
-    <app-experience-card [color]="'#ff970e'" [side]="'left'" [dataInfo]="listExperiences[4]"></app-experience-card>
-    <!-- Adicione mais itens conforme necessário -->
+    <app-experience-card *ngFor="let experience of listExperiences.slice(0, visibleCards)"
+                         [dataInfo]="experience">
+    </app-experience-card>
   </div>
 
 </div>

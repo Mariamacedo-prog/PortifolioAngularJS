@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-experiences',
@@ -6,17 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experiences.component.css']
 })
 export class ExperiencesComponent implements OnInit {
-  dataInfo: {ano: string,empresa: string,funcao: string,atribuicoes: string[]} = {
-    ano: "",
-    empresa: "",
-    funcao: "",
-    atribuicoes: []
-  };
 
   listExperiences=[
     {
       ano: "Dezembro 2021 - Abril 2023",
       empresa: "TechnoJP – Consultoria em Tecnologia da informação LTDA",
+      color: "#00C2FF",
+      side: "left",
       funcao: " Desenvolver Full-Stack ",
       atribuicoes: [
         "Uso da metodologia ágil (Scrum e Kanban);",
@@ -31,6 +27,8 @@ export class ExperiencesComponent implements OnInit {
     {
       ano: "Junho 2022 - Outubro 2022",
       empresa: "CYBER1 DO BRASIL LTDA",
+      color: "#00ff95",
+      side: "right",
       funcao: "Estágio: Desenvolver Mobile ",
       atribuicoes: [
         "Uso da metodologia ágil (Scrum e Kanban);",
@@ -44,6 +42,8 @@ export class ExperiencesComponent implements OnInit {
     {
       ano: "Agosto 2022",
       empresa: "CARIS",
+      color: "#f87ae7",
+      side: "left",
       funcao: "FREELANCE: Desenvolver um site",
       atribuicoes: [
         "Desenvolvi um site para um empresa de contrutora;",
@@ -54,6 +54,8 @@ export class ExperiencesComponent implements OnInit {
     {
       ano: "Outubro 2022",
       empresa: "OLIVEIRA",
+      color: "#f87a7a",
+      side: "right",
       funcao: "FREELANCE: Desenvolver um site",
       atribuicoes: [
         "Desenvolvimento do site na linguagen: Angular 13;",
@@ -64,6 +66,8 @@ export class ExperiencesComponent implements OnInit {
     {
       ano: "Abril 2023 - Março 2024",
       empresa: "INEXPRON TECNOLOGIA E REPRESENTAÇÃO LTDA",
+      color: "#ff970e",
+      side: "left",
       funcao: "Desenvolvedor Full-Stack",
       atribuicoes: [
         "Analise de incidentes;",
@@ -78,13 +82,27 @@ export class ExperiencesComponent implements OnInit {
     }
   ]
 
-  color = 'red';
-  
-  side = 'right';
+  visibleCards = 2;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+ // Detecta o evento de rolagem
+ @HostListener('window:scroll', ['$event'])
+ onScroll(event: any): void {
+   const pos = (document.documentElement.scrollTop || document.body.scrollTop) + window.innerHeight;
+   const max = document.documentElement.scrollHeight;
+   
+   // Se o usuário rolar para baixo e estiver perto da metade da tela
+   if (pos >= max / 2) {
+     this.loadMore(); // Carrega mais cartões
+   }
+ }
+
+ // Função para carregar mais cartões
+ loadMore(): void {
+   this.visibleCards +=1; // Adicione o número de cartões que deseja carregar a cada vez
+ }
 }
