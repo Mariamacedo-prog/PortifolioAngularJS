@@ -1,0 +1,18 @@
+.line{
+  border-top: 2px solid #00C2FF;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px #00C2FF;
+}
+.card-info{
+  display: flex;
+  justify-content: space-between;
+}
+.card-container{
+  display: flex;
+  align-items: center;
+}
+.line-container{
+  flex: 1;
+}
+
+@keyframes fillWidthAnimation {from {width: 0%;} to { width:100%;}}

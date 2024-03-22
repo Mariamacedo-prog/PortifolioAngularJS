@@ -15,11 +15,6 @@ export class ExperienceCardComponent implements OnInit {
     atribuicoes: []
   };
 
-  @Input() color = 'red';
-  
-  @Input() side = 'right';
-
-
   constructor() { }
 
   ngOnInit(): void {

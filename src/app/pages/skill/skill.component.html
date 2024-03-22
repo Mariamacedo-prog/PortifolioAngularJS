@@ -1,1 +1,11 @@
-<p>skill works!</p>
+
+<div class="skills--content">
+  <p class="skills--title"> Skills </p>
+  <div class="skills--list">
+    <app-skill-card *ngFor="let item of listSkills"
+                         [item]="item">
+    </app-skill-card>
+  </div>
+
+</div>
+

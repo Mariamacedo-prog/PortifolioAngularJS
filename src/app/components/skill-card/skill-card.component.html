@@ -1,0 +1,17 @@
+<div class="card-container">
+  <div class="card-img">
+    <img [src]="'../../../assets/' + item.image" width="48px" alt="">
+  </div>
+
+  <div class="line-container">
+    <div class="card-info">
+      <span class="card-name">{{item.title}} </span>
+      <span class="card-percent">{{item.percent}}%</span>
+    </div>
+   
+    <div >
+      <hr style="border: none; border-top: 2px solid black; margin: 0;">
+      <hr class="line" [width]="item.percent+'%'" >
+    </div>
+  </div>
+</div>
