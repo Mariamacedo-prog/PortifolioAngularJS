@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
   
   }
   
-  menus = ["home", "about", "projects", "M S M", "languages", "contact", 'experiences'];
+  menus = ["home", "about", "projects", "M S M", "skills", "contact", 'experiences'];
 
   ngOnInit(): void {
   }
