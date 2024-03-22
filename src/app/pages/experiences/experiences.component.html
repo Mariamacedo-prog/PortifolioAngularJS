@@ -1,19 +1,12 @@
 <div class="timeline">
-  <div class="timeline-item left">
-    <div class="timeline-content">
-      <h3>Empresa XYZ</h3>
-      <p>Descrição da sua experiência profissional nesta empresa.</p>
-      <span class="timeline-date">2021 - Presente</span>
-    </div>
-  </div>
-  
-  <div class="timeline-item right">
-    <div class="timeline-content">
-      <h3>Empresa ABC</h3>
-      <p>Descrição da sua experiência profissional nesta empresa.</p>
-      <span class="timeline-date">2019 - 2021</span>
-    </div>
+
+  <div >
+    <app-experience-card  [color]="'#00C2FF'" [side]="'left'" [dataInfo]="listExperiences[0]"></app-experience-card>
+    <app-experience-card [color]="'#00ff95'" [side]="'right'" [dataInfo]="listExperiences[1]"></app-experience-card>
+    <app-experience-card [color]="'#f87ae7'" [side]="'left'" [dataInfo]="listExperiences[2]"></app-experience-card>
+    <app-experience-card [color]="'#f87a7a'" [side]="'right'" [dataInfo]="listExperiences[3]"></app-experience-card>
+    <app-experience-card [color]="'#ff970e'" [side]="'left'" [dataInfo]="listExperiences[4]"></app-experience-card>
+    <!-- Adicione mais itens conforme necessário -->
   </div>
 
-  <!-- Adicione mais itens conforme necessário -->
 </div>

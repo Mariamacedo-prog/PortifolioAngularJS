@@ -3,4 +3,12 @@
   padding: 20px 0;
   width: 80%;
   position: relative;
+  padding-top: 100px;
+}
+
+.ball{
+  width: 50px; /* Largura da bola */
+  height: 50px; /* Altura da bola */
+  background-color: #f00; /* Cor da bola (vermelha) */
+  border-radius: 50%; /* Torna a bola redonda */
 }

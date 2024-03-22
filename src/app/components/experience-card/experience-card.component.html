@@ -1,1 +1,21 @@
-<p>experience-card works!</p>
+<div class="card ">
+  <div  [class]="side == 'left' ? 'card-left' : 'card-right'">
+    <div class="ball" *ngIf="side == 'left'" [style]="'border: 2px solid '+ color" >
+    </div>
+    <div class="card-content" [style]="'background-color: '+ color" >
+      <h1>{{dataInfo.ano}}</h1>
+      <h3>{{dataInfo.empresa}}</h3>
+      <span>{{dataInfo.funcao}}</span>
+    
+      <p>Atribuições:</p>
+      <ul>
+        <li *ngFor="let item of dataInfo.atribuicoes">{{item}}</li>
+      </ul>
+    </div>
+  
+    <div *ngIf="side == 'right'" class="ball" [style]="'border: 2px solid '+ color" >
+    </div>
+  </div>
+
+</div>
+
