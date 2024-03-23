@@ -14,11 +14,17 @@ export class ExperienceCardComponent implements OnInit {
     side: "",
     atribuicoes: []
   };
-
+  showCardFunction: boolean = false; 
   constructor() { }
 
   ngOnInit(): void {
   
   }
+
+  toggleCardFunction() {
+    this.showCardFunction = !this.showCardFunction; 
+  }
+
+ 
 
 }

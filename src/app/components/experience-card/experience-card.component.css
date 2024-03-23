@@ -11,21 +11,12 @@
   display: grid;
   width: 100%;
 }
-.icon{
+.icon-area{
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content:center;
-}
-.card-function{
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 1s ease, max-height 1s ease;
-}
 
-.icon-down{
-  display: flex;
 }
 
 
@@ -51,16 +42,6 @@
   padding: 30px;
   transition: all 3s ease-in-out;
 }
-.card-content:hover .card-function {
-  opacity: 1;
-  max-height: 700px; /* Ajuste a altura máxima conforme necessário */
-}
-
-.card-content:hover .icon-down {
-  display: none;
-}
-
-
 
 
 h1, h3{

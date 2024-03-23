@@ -6,18 +6,17 @@
       <h1>{{dataInfo.ano}}</h1>
       <h3>{{dataInfo.empresa}}</h3>
       <span>{{dataInfo.funcao}}</span>
-      <div class="icon icon-down"><mat-icon>keyboard_arrow_down</mat-icon></div>
+     
       
-      <div class="card-function">
+      <div class="card-function" *ngIf="showCardFunction">
         <p>Atribuições:</p>
         <ul>
           <li *ngFor="let item of dataInfo.atribuicoes">{{item}}</li>
         </ul>
-        <div class="icon "><mat-icon>keyboard_arrow_up</mat-icon></div>
       </div>
-
+      <div class="icon-area" (click)="toggleCardFunction()"><mat-icon >{{!showCardFunction ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}</mat-icon></div>
     </div>
-  
+ 
     <div *ngIf="dataInfo.side == 'right'" class="ball" [style]="'border: 2px solid '+ dataInfo.color" >
     </div>
   </div>
