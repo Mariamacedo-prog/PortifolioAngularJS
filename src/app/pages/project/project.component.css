@@ -1,0 +1,15 @@
+.project--container{
+  display: flex; 
+  flex-wrap: wrap; 
+  width: 100%; 
+  padding: 100px 0 ;
+
+}
+
+@media only screen and (max-width: 800px) {
+  .project--container{
+    flex-wrap: nowrap; 
+    flex-direction: column;
+  }
+  
+}
