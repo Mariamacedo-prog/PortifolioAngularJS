@@ -44,7 +44,9 @@
   .card:hover{
     padding: 30px 30px 0px 30px;
     img{
-      width: 80vw;
+      width: 100%; /* Definir a largura máxima da imagem como 100% da largura da tela */
+      max-width: 100%; /* Garantir que a imagem não ultrapasse a largura da tela */
+      height: auto; /* Manter a proporção da imagem */
     }
   }
 
@@ -55,11 +57,11 @@
     font-size: 21px;
   }
   
-  .image--area{
-    img{
-      animation:  aparecer 3s forwards;
-      width: 80vw;
-    }
+  .image--area img {
+    animation:  aparecer 3s forwards;
+    width: 100%; /* Definir a largura máxima da imagem como 100% da largura da tela */
+    max-width: 100%; /* Garantir que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Manter a proporção da imagem */
   }
 
 }
