@@ -13,7 +13,7 @@ export class ExperiencesComponent implements OnInit {
       empresa: "TechnoJP – Consultoria em Tecnologia da informação LTDA",
       color: "#00C2FF",
       side: "left",
-      funcao: " Desenvolver Full-Stack ",
+      funcao: " Desenvolvedor Full-Stack ",
       atribuicoes: [
         "Uso da metodologia ágil (Scrum e Kanban);",
         "Desenvolvimento de frontend nas linguagens: Angular 13, AngularJS, Svelte e VueJS;",
@@ -29,7 +29,7 @@ export class ExperiencesComponent implements OnInit {
       empresa: "CYBER1 DO BRASIL LTDA",
       color: "#00ff95",
       side: "right",
-      funcao: "Estágio: Desenvolver Mobile ",
+      funcao: "Estágio: Desenvolvedor Mobile ",
       atribuicoes: [
         "Uso da metodologia ágil (Scrum e Kanban);",
         "Desenvolvimento de app nas linguagens: Angular 13 com IONIC;",
@@ -44,7 +44,7 @@ export class ExperiencesComponent implements OnInit {
       empresa: "CARIS",
       color: "#f87ae7",
       side: "left",
-      funcao: "FREELANCE: Desenvolver um site",
+      funcao: "FREELANCE: Web developer",
       atribuicoes: [
         "Desenvolvi um site para um empresa de contrutora;",
         "Desenvolvimento do site na linguagen: Angular 13;",
@@ -56,7 +56,7 @@ export class ExperiencesComponent implements OnInit {
       empresa: "OLIVEIRA",
       color: "#f87a7a",
       side: "right",
-      funcao: "FREELANCE: Desenvolver um site",
+      funcao: "FREELANCE: Web developer",
       atribuicoes: [
         "Desenvolvimento do site na linguagen: Angular 13;",
         "Desenvolvimento de backend nas linguagens: PHP / laravel;",

@@ -10,28 +10,32 @@
 .card{
   display: grid;
   width: 100%;
+
 }
 .icon-area{
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content:center;
-
+  cursor: pointer;
 }
 
 
 .card-left{
   display: flex;
-  max-width: 500px;
+ 
+  width: 500px;
   justify-self: flex-end;
   animation:  esquerdaCentro 1s forwards;
   cursor: url(../../../assets/code.png), auto;
+
 
 }
 
 .card-right{
   display: flex;
-  max-width: 500px;
+
+  width: 500px;
   justify-self: flex-start;
   animation:  direitaCentro 1s forwards;
   cursor: url(../../../assets/code.png), auto;
@@ -41,6 +45,7 @@
 .card-content{
   padding: 30px;
   transition: all 3s ease-in-out;
+  flex: 1;
 }
 
 
