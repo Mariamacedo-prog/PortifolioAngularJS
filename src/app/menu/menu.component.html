@@ -1,12 +1,14 @@
 <div class="middle">
-  <a *ngFor="let menu of menus" class="{{ menu === 'M S M'? 'logo' : 'btn'}} " routerLinkActive="ativo" [routerLinkActiveOptions]="{exact: true}" routerLink="/{{menu === 'home' || menu === 'M S M' ? '': menu }}">
-    <span *ngIf="menu === 'M S M'; else otherButton">
+  <a *ngFor="let menu of menus" class="{{ menu.name === 'M S M'? 'logo' : 'btn'}} " 
+  routerLinkActive="ativo" [routerLinkActiveOptions]="{exact: true}"
+  routerLink="/{{menu.route}}">
+    <span *ngIf="menu.name === 'M S M'; else otherButton">
       <span>M</span>
       <span [ngStyle]="{'color': '#00C2FF'}">S</span>
       <span>M</span>
     </span>
     <ng-template #otherButton>
-      <span>{{menu | uppercase}}</span>
+      <span>{{menu.name | uppercase}}</span>
     </ng-template>
   </a>
   <mat-icon class="menu--icon" aria-hidden="false" aria-label="Example home icon" color="#fff" (click)="openCloseMenu()">menu</mat-icon>
@@ -14,7 +16,9 @@
 
 
 <span *ngIf="showMenu" class="menu--toggle--area">
-    <a (click)="this.showMenu = false" routerLinkActive="ativo" [routerLinkActiveOptions]="{exact: true}" *ngFor="let menu of menus" routerLink="/{{menu === 'home' ? '': menu }}" class="{{ menu === 'M S M'? 'ignore--logo' : 'btn--toggle'}}">
-        <span>{{menu | uppercase}}</span>
+    <a (click)="this.showMenu = false" routerLinkActive="ativo" [routerLinkActiveOptions]="{exact: true}" 
+    *ngFor="let menu of menus" routerLink="/{{menu.route }}" 
+    class="{{ menu.name === 'M S M'? 'ignore--logo' : 'btn--toggle'}}">
+        <span>{{menu.name | uppercase}}</span>
     </a>
 </span>

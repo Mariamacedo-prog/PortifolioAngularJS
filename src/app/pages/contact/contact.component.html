@@ -1,1 +1,52 @@
-<p>contact works!</p>
+<div class="content">
+  <div  class="left-side">
+    <img src="../../../assets/IPhone-virado.png.png" alt="">
+  </div>
+
+    <form [formGroup]="formData" class="form" (ngSubmit)="onSubmit()" >
+
+      <mat-form-field class="input-text">
+     
+        <mat-label >NAME</mat-label>
+        <input matInput  type="text" formControlName="name" >
+        <mat-error *ngIf="formData.get('name')?.hasError('required')">
+          Name is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+            
+      <mat-form-field class="input-text">
+        <mat-label >PHONE NUMBER</mat-label>
+        <input matInput  type="text" formControlName="telefone" (keyup)="maskTelefone()">
+      </mat-form-field>
+
+      <mat-form-field class="input-text">
+        <mat-label >EMAIL</mat-label>
+        <input matInput type="email" formControlName="email" >
+        <mat-error *ngIf="formData.get('email')?.hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>      
+        <mat-error *ngIf="formData.get('email')?.hasError('email')">
+          Email is <strong>invalid</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="input-text">
+        <mat-label >YOUR MESSAGE</mat-label>
+        <textarea matInput   style="height:100px" formControlName="message" placeholder="YOUR MESSAGE"></textarea>
+        <mat-error *ngIf="formData.get('message')?.hasError('required') ">
+          Message is <strong>required</strong>
+        </mat-error>  
+      </mat-form-field>
+
+
+    <div>
+      <button type="submit" [disabled]="!isFormValid()" class="button-send">SEND</button>
+    </div>
+    
+  </form>
+
+
+ 
+</div>
+    
+

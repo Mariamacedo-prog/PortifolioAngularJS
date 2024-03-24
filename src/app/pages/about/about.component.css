@@ -14,7 +14,9 @@
   margin-top: 100px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.002) 30%, rgba(0, 195, 255, 0.725) 150%);
 }
-
+a{
+color: #fff;
+}
 .about--info{
   width: 70%;
 

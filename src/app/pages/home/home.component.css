@@ -122,6 +122,11 @@ a:hover{
   .home--skils {
     font-size: 25px;
   }
+
+  .slider--mobile {
+    display: none;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -173,14 +178,17 @@ a:hover{
   }
 }
 
-@media only screen and (max-width: 800px) and (orientation: landscape) {
+@media only screen and (max-width: 700px) and (orientation: landscape) {
   .home--botaoGit--area {
     padding: 100px;
   }
   .slider--mobile{
     margin: 100px;
     display: inline;
+  }
 
+  .slider--web {
+    display: none;
   }
 }
 

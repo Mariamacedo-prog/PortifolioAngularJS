@@ -21,7 +21,9 @@
   <p class="about--title"><span [ngStyle]="{'color': '#fff'}">What I </span>  do. </p>
   <div class="do--list">
     <div *ngFor="let item of doItens">
-      <app-simple-card [item]="item"></app-simple-card>
+      <a routerLink="/projects">
+        <app-simple-card [item]="item"></app-simple-card>
+      </a>
     </div>
   </div>
 </div>

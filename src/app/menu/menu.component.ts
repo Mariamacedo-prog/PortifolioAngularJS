@@ -13,7 +13,35 @@ export class MenuComponent implements OnInit {
   
   }
   
-  menus = ["home", "about", "projects", "M S M", "skills", "contact", 'experiences'];
+  menus = [{
+    name: "home",
+    route: ""
+  },
+  {
+    name: "about",
+    route: "about"
+  },
+  {
+    name: "projects",
+    route: "projects"
+  },
+  {
+    name: "M S M",
+    route: ""
+  },
+  {
+    name: "skills",
+    route: "skills"
+  },
+  {
+    name: "contact",
+    route: "contact"
+  },
+  {
+    name: "experiences",
+    route: "experiences"
+  },
+];
 
   ngOnInit(): void {
   }

@@ -9,9 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
-import {MatTreeModule} from '@angular/material/tree';
 import { AboutComponent } from './pages/about/about.component';
-import {MatTableModule} from '@angular/material/table';
 import { SimpleCardComponent } from './components/simple-card/simple-card.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { SkillComponent } from './pages/skill/skill.component';
@@ -20,9 +18,15 @@ import { ExperiencesComponent } from './pages/experiences/experiences.component'
 import { ExperienceCardComponent } from './components/experience-card/experience-card.component';
 import { SkillCardComponent } from './components/skill-card/skill-card.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
-
+import {MatMenuModule} from '@angular/material/menu';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { DownloadButtonComponent } from './components/download-button/download-button.component';
 @NgModule({
   declarations: [
+
     AppComponent,
     MenuComponent,
     SliderComponent,
@@ -36,15 +40,20 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     ExperiencesComponent,
     ExperienceCardComponent,
     SkillCardComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    DownloadButtonComponent
   ],
   imports: [
+    HttpClientModule,
+    MatInputModule,
+    MatFormFieldModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatTreeModule,
-    MatTableModule
+    MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
