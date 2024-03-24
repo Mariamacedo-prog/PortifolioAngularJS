@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.documentElement.scrollTop = -2000;
   }
 
 }

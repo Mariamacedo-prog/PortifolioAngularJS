@@ -7,6 +7,9 @@
   max-width: 100vw;
   padding:  60px 60px 0px 60px;
   animation:  aparecer 1s forwards;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
 }
 .card--title{
   font-size: 30px;
@@ -14,6 +17,9 @@
 }
 .card--description{
   font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  text-wrap: break-word;
 }
 .image--area{
   flex: 1;

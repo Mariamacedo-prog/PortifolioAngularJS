@@ -87,6 +87,7 @@ export class ExperiencesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.documentElement.scrollTop = -2000;
   }
 
  // Detecta o evento de rolagem

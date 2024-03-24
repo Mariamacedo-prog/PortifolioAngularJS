@@ -6,11 +6,12 @@ import { Component, Input, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./project-card.component.css']
 })
 export class ProjectCardComponent implements OnInit {
-  @Input() dataInfo: {image: string, name: string,description: string,color: string} = {
+  @Input() dataInfo: {image: string, name: string,description: string,color: string,link: string} = {
     image: "nochat_container.png",
     name: "No Chat",
     description: "Uma rede social, bla bla bal, Uma rede social, bla bla bal, Uma rede social, bla bla bal, ",
-    color: "#00C2FF"
+    color: "#00C2FF",
+    link:""
   };
 
 

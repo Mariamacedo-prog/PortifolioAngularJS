@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit {
   }
 
   async ngOnInit() {
-
+    document.documentElement.scrollTop = -2000;
   }
 
   onSubmit() {
