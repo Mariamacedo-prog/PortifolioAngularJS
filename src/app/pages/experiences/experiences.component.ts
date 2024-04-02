@@ -59,7 +59,6 @@ export class ExperiencesComponent implements OnInit {
       funcao: "FREELANCE: Web developer",
       atribuicoes: [
         "Desenvolvimento do site na linguagen: Angular 13;",
-        "Desenvolvimento de backend nas linguagens: PHP / laravel;",
         "Consertos de Bugs;"
       ]
     },
